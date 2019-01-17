@@ -1,12 +1,12 @@
 import XCTest
 @testable import TFSwiftReports
+import TensorFlow
 
 final class TFSwiftReportsTests: XCTestCase {
     func testExample() {
         let doubleTensor = Tensor<Double>(randomNormal: TensorShape([1000]))
-        let integerTensor = Tensor<Double>(randomNormal: TensorShape([1000]))
-        print(floatTensor.bar)
-        print(floatTensor.foo())
+        print(doubleTensor.bar)
+        print(doubleTensor.foo())
     }
 
     static var allTests = [

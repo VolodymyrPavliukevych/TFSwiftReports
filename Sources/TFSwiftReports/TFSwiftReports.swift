@@ -8,9 +8,11 @@ public protocol BarRepresentable {
 extension Tensor {
     public var bar: String { return String(describing: Scalar.self)  }
 }
-
+// FIXME: - Compilation abort
+// First compilation abort error.
 extension Tensor {
     public func foo() -> String {
         return bar
     }
 }
+
